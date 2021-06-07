@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    table{
+        border: solid rgb(131, 157, 236) 5px;
+        background-color:rgb(236, 236, 236);
+        text-align: center;
+    }
+    caption{
+
+        background-color: rgb(131, 157, 236);
+    }
+    #drink{
+        width: 500px;
+    }
+    .m{width: 100px;
+
+    }
+   
+</style>
+</head>
+<body>
+    <form action="test40.php" method="post">
+    <table>
+        <caption>자판기</caption>
+        <tr>
+            <td><input type="checkbox" name="menu[]" value="밀크커피">밀크커피<br>300원</td>
+            <td><input type="checkbox" name="menu[]" value="우유">우유<br>400원</td>
+            <td><input type="checkbox" name="menu[]" value="코코아">코코아<br>500원</td>
+            <td> <input type="checkbox" name="menu[]" value="율무차">율무차<br>600원</td>
+            <td><input type="checkbox" name="menu[]" value="생수">생수<br>700원</td>
+        </tr>
+        <tr> 
+            <td colspan="5">                  
+                입금금액 <input type="text" name="money" class="m">
+                잔돈 <input type="text" name="change" class="m">
+                <button type="submit" name="drink">음료수내놔</button>
+                <button type="submit" name="coin">동전받기</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <p>음료수나오는곳</p>
+                <input type="text" name="text" id="drink">
+            </td>
+        </tr>
+    </table>
+</form>
+       
+
+</body>
+</html>

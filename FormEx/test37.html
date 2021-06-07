@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input{
+            width: 30px;
+            height: 20px;
+        }
+        td, tr{
+            border:none;
+            background-color: pink;
+        }
+        table{
+            text-align: center;
+            width: 400px;
+            height: 20px;
+            border:none;
+        }
+        button{
+            color: white;
+            font-weight: bold;
+            background-color: rgb(253, 27, 102);
+            border: none;
+            width: 100px;
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>에버랜드 입장 요금표</h2>
+    <h3> * 소인 요금은 12세 이하 또는 65세 이상</h3>
+    <form action="test37.php" method="POST">
+        나이 입력 : <input type="text" name="age">
+    <table border="1px">
+        <tr>
+            <td colspan="2">구분</td>
+            <td>대인</td>
+            <td>소인</td>
+            <td>선택</td>
+        </tr>
+        <tr>
+            <td rowspan="2">입장권</td>
+            <td>주간</td>
+            <td>26,000</td>
+            <td>19,000</td>
+            <td rowspan="6"><input type="radio" name="fee"><br>
+                <input type="radio"  name="Nfee"><br>
+                <input type="radio" name="freefee"><br>
+                <input type="radio"name="Nfreefee"><br>
+                <input type="radio" name="2freefee"><br>
+                <input type="radio"name="comfee"></td>
+            
+        </tr>
+        <tr>
+            <td>야간</td>
+            <td>21,000</td>
+            <td>16,000</td>
+        </tr>
+        <tr>
+            <td rowspan="2">자유이용권</td>
+            <td>주간</td>
+            <td>33,000</td>
+            <td>24,000</td>
+        </tr>
+        <tr> 
+            <td>야간</td>
+            <td>28,000</td>
+            <td>21,000</td>
+        </tr>
+        <tr>
+            <td colspan="2">2일 자유이용권</td>
+            <td>55,000</td>
+            <td>40,000</td>
+        </tr>
+        <tr>
+            <td colspan="2">콤비권</td>
+            <td>54,000</td>
+            <td>40,000</td>
+        </tr>
+    </table>
+        <button type="submit">결제하기</button>
+</form>
+    
+</body>
+</html>

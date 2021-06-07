@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    body{
+        background-color: rgb(241, 163, 176);
+    }
+    
+    h2{
+        margin-left: 310px;
+    }
+    table{
+        margin-left: 100px;
+        background-color: pink;
+        font-size: 14px;
+    }
+    td{
+        padding: 10px;
+    }
+    .new{
+        padding-top : 10px;
+        margin-left: 300px;
+    }
+
+</style>
+<body>
+    <h2>회원가입</h2>
+    <form action="test34.php" method="POST">
+    <table>
+        <tr>
+            <td>아이디</td>
+            <td><input type="text" name="id">
+            <button type="submit">중복확인</button></td>
+        </tr>
+        <tr>
+            <td>비밀번호</td>
+            <td><input type="password" name="pass">
+            *비밀번호를 다시 입력 해주세요.</td>
+        </tr>
+        <tr>
+            <td>비밀번호 확인</td>
+            <td><input type="password" name="passchk"></td>
+        </tr>
+        <tr>
+            <td>성명</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>성별</td>
+            <td><input type="radio" name="zender" value="남자">남자
+                <input type="radio" name="zender" value="여자">여자</td>
+        </tr>
+        <tr>
+            <td>이메일</td>
+            <td><input type="text" name="mail1">@
+                <input type="text" name="mail2">
+                <select name="mail3" >
+                    <option value="none">직접입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="daum.net">daum.net</option>
+  
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>주소</td>
+            <td><input type="text" name="address1">
+            <button type="submit">주소찾기</button></td>
+        </tr>
+        <tr>
+            <td>상세주소</td>
+            <td><input type="text" name="address2"></td>
+        </tr>
+        <tr>
+            <td>휴대폰</td>
+           <td>
+            <input type="radio" name="tel" value="SKT">SKT
+            <input type="radio" name="tel" value="KT">KT
+            <input type="radio" name="tel" value="LGU+">LGU+
+            <br>
+            
+            <select name="phonenum1" >
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="019">019</option>   
+            </select>
+            <input type="text"  name="phonenum2" size="4"  /> -
+            <input type="text"name="phonenum3" size="4" />
+            </td>
+        </tr>
+        <tr>
+            <td>관심</td>
+            <td><input type="checkbox" name="car[]" value="수입차">수입차
+                <input type="checkbox" name="car[]" value="국산차">국산차
+                <input type="checkbox" name="car[]" value="SUV">SUV
+                <input type="checkbox" name="car[]" value="경차">경차
+                <input type="checkbox" name="car[]" value="LPG">LPG</td>
+        </tr>
+        <tr>
+            <td>자기소개</td>
+            <td><textarea name="introduce" id="" cols="40" rows="10"></textarea></td>
+        </tr>
+    </table>
+    <div class="new">
+        <button type="submit" >가입하기</button>
+        <button type="submit" >다시입력</button>
+    </div>
+   
+</form>
+</body>
+</html>

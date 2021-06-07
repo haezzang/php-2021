@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        button{
+            border:none;
+            border-collapse: collapse;
+            background-color: pink;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin-left:60px;
+            
+        }
+        input[type="checkbox"]{
+            zoom:1.5;
+        }
+    </style>
+</head>
+<body>
+    <h3>좋아하는 동물을 선택하시오</h3>
+    
+    <form action="test27.php" method="post">
+     
+                <input type="checkbox" name="animal[]" value="개">개
+                <input type="checkbox" name="animal[]" value="소">소
+                <input type="checkbox" name="animal[]" value="말">말
+                <input type="checkbox" name="animal[]" value="돼지">돼지
+                <hr width="200px" align="left">
+              <button type="submit">입력완료</button>
+    
+        
+        
+    </form>
+    
+</body>
+</html>

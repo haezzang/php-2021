@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+     
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        #btn{
+            border-color: white;
+            color:white;
+            background-color: pink;
+        }
+        .td1{
+            color: black
+        }
+        input{
+            border: none;
+            background-color:whitesmoke
+           
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="test18.php">
+        <table border="1px">
+                <tr><td class="td1"><center>아이디</center></td>
+                    <td><input type="name" name="id"></td>
+                </tr>
+                <tr><td class="td1" ><center>비밀번호</center></td>
+                    <td><input type="password" name="pass"></td>
+                </tr>
+                <tr><td class="td1" ><center>이름</center></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><button type="submit" id="btn">Login</button></center></td>
+                </tr>
+            
+               
+        </table>
+      
+       
+       
+    </form>
+</body>
+</html>

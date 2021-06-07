@@ -1,0 +1,77 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <style>
+           #btn{
+               background-color: coral;
+               color: white;
+               border:0;
+               
+           }
+           .idp{
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            
+            
+           }
+           #tb{
+               border-color: white;
+           }
+
+          .n{
+              background-color: skyblue;
+              color: white;    
+           }
+          
+
+        </style>
+    </head>
+
+    <body>
+        
+        <form method="post"action="#">
+            아이디 : <input type="text" placeholder="아이디" name="uid"><br>
+            비밀번호 : <input type="password" placeholder="비밀번호" name="upass"><br>
+            <button type="submit">로그인</button>
+        </form>
+
+        <table border="1">
+            <form method="post"action="#">
+             <tr>
+                 <td></td>
+                 <td><input type="text" placeholder="아이디" name="uid"></td>
+            </tr>
+            <tr>
+                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                <td><input type="password" placeholder="비밀번호" name="upass"><br></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><button type="submit">로그인</button></center></td>
+            </tr>
+            </form>
+         </table>
+
+        -->
+        <table >
+            <form method="post"action="#">
+             <tr>
+                 <td class="n">아이디</td>
+                 <td><input type="text" class="idp" placeholder="아이디" name="uid"></td>
+            </tr>
+            <tr>
+                <td class="n">비밀번호</td>
+                <td><input type="password" class="idp" placeholder="비밀번호" name="upass"><br></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><button type="submit" id="btn">로그인</button></center></td>
+            </tr>
+         
+            </form>
+         </table>
+    </body>
+
+
+</html>

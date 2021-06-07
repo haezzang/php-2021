@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+            border-left: none; 
+            border-right: none; 
+            border-bottom: none;
+            border-top-color: blue;
+            border-bottom-color: blue;
+        }
+        .name{
+            font-size: 12px;
+            text-align: center;
+            background-color: #dee5fd;
+            color: rgb(12, 40, 94);
+            padding-right: 40px;
+            padding-left:10px;
+        }
+     
+    </style>
+</head>
+<body>
+   <p style="font-weight: bold; color: blue;">기본정보 입력</p> 
+    <p style="font-size: 13px; color:rgb(75, 71, 71)"> 입력하신 개인정보는 회원님의 동의 없이 공개되지 않으며, 개인정보취급방침에 따라 보호되고 있습니다.</p>
+    <hr>
+    <form action="test20.php" method="POST">
+    <table border="1px">
+        <tr>
+            <td class="name">*이름</td>
+            <td> <input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td class="name">*생년월일</td>
+            <td style="font-size: 5px;"> <input type="date" name="birth"> (*14세 미만은 회원가입이 불가하며, 비회원으로 서비스합니다)<br>예)1990년 08월 15일</td>
+        </tr>
+        <tr>
+            <td class="name">*취미</td>
+            <td><input type="checkbox" name="hobby[]" value="독서">독서
+                <input type="checkbox" name="hobby[]"value="음악감상">음악감상
+                <input type="checkbox" name="hobby[]"value="영화보기">영화보기
+                <input type="checkbox" name="hobby[]"value="수영">수영
+                <input type="checkbox" name="hobby[]"value="운동">운동
+            </td>
+        </tr>
+        <tr>
+            <td class="name">*성별</td>
+            <td><input type="radio" name="zender">남<input type="radio" name="zender">여</td>
+        </tr>
+        <tr>
+            <td class="name">*아이디</td>
+            <td style="font-size: 5px;"><input type="id" name="id"> <button type="submit">  아이디 중복체크</button> (4~12자의 영문 소문자/숫자, 한글입력불가)</td>
+        </tr>
+        <tr>
+            <td class="name">*비밀번호</td>
+            <td><input type="password" name="pass"></td>
+        </tr>
+        <tr>
+            <td class="name">*비밀번호 확인</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td class="name">*휴대폰</td>
+           <td>
+            <select id="txtMobile1" name="phonenum1" >
+                <option value="">선택</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="019">019</option>
+                <option value="010">010</option>
+            </select> -
+            <input type="text" id="txtMobile2" name="phonenum2" size="4"  /> -
+            <input type="text" id="txtMobile3"name="phonenum3" size="4" />
+            <p style="font-size: 5px;">* 비밀번호 분실시 작성하신 휴대폰번호로 비밀번호를 알려드립니다.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="name">*이메일</td>
+            <td><input type="email" name="email1">
+     
+        </tr>
+    </table>
+        <button type="submit">입력완료</button>
+</form>
+
+</body>
+</html>

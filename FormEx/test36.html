@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+  tr td{
+        text-align: center;
+        width: 300px;
+        height: 100px;
+  }
+
+    button{
+        border: none;
+    }
+    #title{
+        background-color: green;
+        font-weight: bold;     
+    }
+    #sum{
+        background-color: yellow;
+    }
+    button{
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+    }
+</style>
+<body>
+ <table border="3px">
+     <tr id="title">
+         <td colspan="2">menu calculator</td>
+     </tr>
+     <tr>
+         <td>메뉴</td>
+        <td>수량</td>
+    </tr>
+    <form action="test36.php" method="post">
+    <tr>
+        <td>햄버거</td>
+        <td><input type="text" name="hcnt" value="0"></td>
+    </tr>
+    <tr>
+        <td>콜라</td>
+        <td><input type="text" name="ccnt" value="0"></td>
+    </tr>
+    <tr>
+        <td>쉐이크</td>
+        <td><input type="text" name="scnt" value="0"></td>
+    </tr>
+    <tr id="sum">
+        <td colspan="2" ><button type="submit">계산하기</button></td>
+    </tr>
+    </form>
+ </table>
+</body>
+</html>
