@@ -1,0 +1,16 @@
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+tr:nth-child(odd){
+    background-color: rgb(255, 217, 0);
+}
+tr:hover{
+    background-color: rgb(235, 110, 79);
+}
+a{
+text-decoration: none;
+border:0;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:hover{
+           background-color: pink;
+           border: none;
+        }
+        input{
+            background-color: plum;
+        padding: 10px;
+        border: none;
+        }
+        button{
+            margin-left: 60px;
+        }
+        div{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+        <div>
+            <form action="insert.php" method="POST">
+                <br>
+                <input type="text" placeholder="책 제목" name="title"> <br>
+                <br>
+                <input type="text"placeholder="작가"  name="author"> <br>
+                <br>
+                <input type="text"placeholder="가격"  name="price" > <br>
+                <br>
+                <button type="submit">전송</button>
+            </form>
+        </div>
+   
+
+</body>
+</html>
