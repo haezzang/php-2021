@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200&display=swap" rel="stylesheet">
+ 
+
+
+    <style>
+
+        button{
+            background-color: rgb(206, 230, 240);
+            border-radius: 40px;
+            height: 25px;
+            width: 80;
+        }
+
+        body{
+            background-color: rgb(206, 230, 240);
+        }
+
+        div{
+            margin-top: 100px;
+            margin-left: 350px;
+            border-radius: 40px;
+            height: 500px;
+            width: 800px;
+            background-color: white;
+        }
+        input{
+    
+            border-radius: 40px;
+            height: 20px;
+            width: 150px;
+        }
+        input:hover{
+
+        
+    background-color:rgb(206, 230, 240);
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <center>
+            <br>
+            <h1>추가하기</h1>
+                <form action="insert.php" method="POST">
+                    <br>
+                    <input type="text" placeholder="책 제목" name="title"> <br>
+                    <br>
+                    <input type="text"placeholder="작가"  name="author"> <br>
+                    <br>
+                    <input type="text"placeholder="가격"  name="price" > <br>
+                    <br>
+                    <input type="file"placeholder="가격"  name="img" > <br>
+                    <br>
+                    <button type="submit">추가하기</button>
+                </form>            
+        </center>
+
+    </div>
+
+
+</body>
+</html>
